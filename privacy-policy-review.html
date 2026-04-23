@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoColours - 隐私政策</title>
+    <meta name="description" content="PhotoColours 隐私政策">
+    <style>
+        :root {
+            --bg-top: #eef3e6;
+            --bg-bottom: #dbe5d8;
+            --card-bg: rgba(255, 255, 255, 0.94);
+            --card-border: rgba(255, 255, 255, 0.6);
+            --text-primary: #1f2533;
+            --text-secondary: #5b6577;
+            --text-muted: #7d8698;
+            --accent: #5c7869;
+            --shadow: 0 26px 60px rgba(42, 58, 49, 0.16);
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            min-height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: var(--text-primary);
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.5), transparent 34%),
+                linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+        }
+
+        body { padding: 24px 16px 40px; }
+
+        .shell { width: min(100%, 900px); margin: 0 auto; }
+
+        .hero { padding: 28px 24px 18px; }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        h1 {
+            margin: 0;
+            font-family: "Times New Roman", Georgia, "Songti SC", serif;
+            font-size: clamp(34px, 6vw, 54px);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+        }
+
+        .subtitle {
+            margin: 14px 0 0;
+            max-width: 700px;
+            font-size: clamp(15px, 2.8vw, 18px);
+            line-height: 1.75;
+            color: var(--text-secondary);
+        }
+
+        .panel {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .content { padding: 24px; }
+
+        .meta {
+            display: inline-flex;
+            align-items: center;
+            min-height: 36px;
+            padding: 0 14px;
+            border-radius: 999px;
+            background: rgba(92, 120, 105, 0.1);
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .sections {
+            display: grid;
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .section {
+            padding: 20px 18px;
+            border-radius: var(--radius-lg);
+            background: rgba(246, 248, 244, 0.92);
+        }
+
+        .section h2 {
+            margin: 0 0 10px;
+            font-size: 19px;
+            line-height: 1.35;
+            font-weight: 800;
+            color: #283145;
+        }
+
+        .section p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--text-secondary);
+        }
+
+        .closing {
+            margin-top: 18px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        @media (min-width: 720px) {
+            body { padding: 40px 24px 56px; }
+            .hero { padding: 38px 34px 22px; }
+            .content { padding: 30px; }
+            .sections { gap: 18px; }
+            .section { padding: 22px 22px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <p class="eyebrow">PhotoColours</p>
+            <h1>隐私政策</h1>
+            <p class="subtitle">
+                本页面用于应用商店审核与公示。PhotoColours 为本地图片处理工具，照片分析、颜色提取和卡片渲染均以设备本地处理为主。
+            </p>
+        </header>
+
+        <section class="panel content" aria-labelledby="privacy-policy-title">
+            <div class="meta" id="privacy-policy-title">更新日期：2026年4月23日</div>
+
+            <div class="sections">
+                <article class="section">
+                    <h2>1. 运营者说明</h2>
+                    <p>本隐私政策适用于 PhotoColours 应用及其相关功能。PhotoColours 为个人开发者提供和运营的本地图片处理工具，你可通过应用商店公示的开发者联系邮箱与我们联系。</p>
+                </article>
+
+                <article class="section">
+                    <h2>2. 我们处理的信息</h2>
+                    <p>本应用仅在你主动选择照片时处理相关数据，包括照片像素内容、照片中可读取的拍摄时间、位置信息以及动态照片附带的本地元数据。</p>
+                </article>
+
+                <article class="section">
+                    <h2>3. 处理目的</h2>
+                    <p>这些信息仅用于完成照片色盘提取、背景色计算、卡片文案默认值生成、构图预览以及最终图片导出，不用于画像分析或广告推荐。</p>
+                </article>
+
+                <article class="section">
+                    <h2>4. 权限与本地保存</h2>
+                    <p>应用会在系统授权后访问你选择的照片，并在你触发导出时把生成结果保存到本机相册。除你主动保存的结果外，应用不向远程服务器上传照片。</p>
+                </article>
+
+                <article class="section">
+                    <h2>5. 信息共享与对外提供</h2>
+                    <p>PhotoColours 不提供账号系统、社区发布或云端图片处理服务，也不会在未经你单独同意的情况下向第三方共享、转让或公开披露你选择的照片、照片元数据或导出内容。</p>
+                </article>
+
+                <article class="section">
+                    <h2>6. 数据传输说明</h2>
+                    <p>PhotoColours 当前不提供账号系统、云端备份或联网图片处理能力。照片分析、颜色提取和卡片渲染均在设备本地完成。</p>
+                </article>
+
+                <article class="section">
+                    <h2>7. 缓存与临时文件</h2>
+                    <p>为完成图片读取、预览或动态照片解析，应用可能在设备缓存目录临时生成中间文件。这些临时文件仅用于本地处理，不会作为长期个人资料保存。</p>
+                </article>
+
+                <article class="section">
+                    <h2>8. 信息安全保护措施</h2>
+                    <p>我们重视个人信息安全，并采取与本应用形态相匹配的保护措施，包括：通过系统权限校验和开发维护身份鉴别限制非授权访问；依托操作系统沙箱、最小必要访问控制和文件隔离机制保护本地处理数据；在应用发布、更新和维护过程中执行签名校验、依赖检查与恶意代码防范；对必要的异常信息和操作日志进行访问约束与安全审计；如发生安全事件，将依法依规进行评估、处置并采取补救措施。</p>
+                </article>
+
+                <article class="section">
+                    <h2>9. 保存期限与删除</h2>
+                    <p>你选择的原始照片由系统相册或你指定的位置自行保存管理。应用处理过程中生成的缓存或临时文件仅在实现当前功能所需的最短期间内保留，并会在系统回收、你清理缓存、删除应用或删除导出结果后被删除或不可继续访问。</p>
+                </article>
+
+                <article class="section">
+                    <h2>10. 你的选择权</h2>
+                    <p>你可以拒绝授予照片访问或保存权限；拒绝后，相应功能可能无法使用。你也可以删除应用、清理缓存或删除已导出的结果来停止后续本地保留。</p>
+                </article>
+
+                <article class="section">
+                    <h2>11. 政策更新</h2>
+                    <p>若应用功能、权限申请范围或个人信息处理方式发生变化，我们会同步更新本隐私政策，并在应用内或上架资料中公布最新版本。</p>
+                </article>
+            </div>
+
+            <p class="closing">如你继续使用本应用相关功能，即表示你已阅读并理解本隐私政策的内容。</p>
+        </section>
+    </main>
+</body>
+</html>
