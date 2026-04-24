@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoColours多彩照片 - 隐私政策（含穿山甲广告 SDK）</title>
+    <meta name="description" content="PhotoColours多彩照片 隐私政策（含穿山甲广告 SDK 说明）">
+    <style>
+        :root {
+            --bg-top: #f1efe7;
+            --bg-bottom: #dfe7df;
+            --panel-bg: rgba(255, 255, 255, 0.94);
+            --panel-border: rgba(255, 255, 255, 0.65);
+            --section-bg: rgba(247, 248, 244, 0.96);
+            --text-primary: #202633;
+            --text-secondary: #596274;
+            --text-muted: #788193;
+            --accent: #5a7864;
+            --accent-soft: rgba(90, 120, 100, 0.12);
+            --shadow: 0 24px 60px rgba(43, 55, 47, 0.14);
+            --radius-xl: 34px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: var(--text-primary);
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.58), transparent 34%),
+                linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+        }
+
+        body {
+            padding: 24px 16px 44px;
+        }
+
+        .shell {
+            width: min(100%, 920px);
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 28px 24px 18px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: "Times New Roman", Georgia, "Songti SC", serif;
+            font-size: clamp(34px, 6vw, 56px);
+            line-height: 1.03;
+            letter-spacing: -0.03em;
+        }
+
+        .subtitle {
+            margin: 14px 0 0;
+            max-width: 760px;
+            color: var(--text-secondary);
+            font-size: clamp(15px, 2.8vw, 18px);
+            line-height: 1.82;
+        }
+
+        .panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .content {
+            padding: 24px;
+        }
+
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .meta-chip {
+            display: inline-flex;
+            align-items: center;
+            min-height: 36px;
+            padding: 0 14px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .sections {
+            display: grid;
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .section {
+            padding: 20px 18px;
+            border-radius: var(--radius-lg);
+            background: var(--section-bg);
+        }
+
+        .section h2 {
+            margin: 0 0 10px;
+            color: #283145;
+            font-size: 19px;
+            line-height: 1.35;
+            font-weight: 800;
+        }
+
+        .section p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.92;
+        }
+
+        .section p + p,
+        .section ul,
+        .section ol {
+            margin-top: 10px;
+        }
+
+        .section ul,
+        .section ol {
+            padding-left: 22px;
+            color: var(--text-secondary);
+        }
+
+        .section li {
+            margin: 6px 0;
+            font-size: 15px;
+            line-height: 1.88;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .closing {
+            margin-top: 18px;
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.82;
+        }
+
+        @media (min-width: 720px) {
+            body {
+                padding: 40px 24px 56px;
+            }
+
+            .hero {
+                padding: 38px 34px 22px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .sections {
+                gap: 18px;
+            }
+
+            .section {
+                padding: 22px 22px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-top: #25342d;
+                --bg-bottom: #152019;
+                --panel-bg: rgba(24, 31, 27, 0.88);
+                --panel-border: rgba(255, 255, 255, 0.08);
+                --section-bg: rgba(255, 255, 255, 0.04);
+                --text-primary: #edf2ec;
+                --text-secondary: #c5d0c7;
+                --text-muted: #a5b0a7;
+                --accent: #c0d0c1;
+                --accent-soft: rgba(192, 208, 193, 0.12);
+                --shadow: 0 26px 56px rgba(0, 0, 0, 0.34);
+            }
+
+            .section h2 {
+                color: #f2f6f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <p class="eyebrow">PhotoColours多彩照片</p>
+            <h1>隐私政策</h1>
+            <p class="subtitle">
+                PhotoColours多彩照片是一款以本地图片处理为核心的应用，提供照片色盘提取、卡片排版、图片导出等功能。当前版本同时接入穿山甲广告 SDK，
+                用于广告展示与广告效果统计。本政策用于说明我们以及相关第三方如何处理你的个人信息。
+            </p>
+        </header>
+
+        <section class="panel content" aria-labelledby="privacy-policy-title">
+            <div class="meta-row">
+                <div class="meta-chip" id="privacy-policy-title">更新日期：2026年4月24日</div>
+                <div class="meta-chip">适用于：Android 版本（含穿山甲广告 SDK）</div>
+            </div>
+
+            <div class="sections">
+                <article class="section">
+                    <h2>1. 开发者信息与联系方式</h2>
+                    <p>本应用开发者为滨州幻境网络科技有限公司。如你对本隐私政策、个人信息保护或第三方 SDK 接入情况有疑问、意见或建议，可通过以下方式联系我们：1529856440@qq.com。</p>
+                </article>
+
+                <article class="section">
+                    <h2>2. 我们处理的本地图片信息</h2>
+                    <p>当你主动选择照片时，本应用会在设备本地处理与你所选照片相关的信息，包括照片像素内容、照片中可读取的拍摄时间、位置信息以及动态照片附带的本地元数据。这些处理用于完成颜色提取、背景色计算、卡片文案默认值生成、排版预览以及最终图片导出。</p>
+                    <p>除你主动导出或系统正常读写所必需的处理外，我们不会因为广告展示而上传你的原始照片、照片元数据或导出后的图片内容。</p>
+                </article>
+
+                <article class="section">
+                    <h2>3. 接入的第三方 SDK：穿山甲广告 SDK</h2>
+                    <p>当前版本接入了穿山甲广告 SDK，由北京巨量引擎网络技术有限公司提供，主要用于广告展示、广告请求与填充、广告监测归因、反作弊、广告效果统计分析以及稳定性保障。</p>
+                    <p>按照当前版本的实现，只有在你阅读并同意本隐私政策后，应用才会启动广告相关服务。</p>
+                    <ul>
+                        <li>穿山甲 SDK 服务基本信息公示与隐私说明：<a href="https://www.csjplatform.com/privacy/partner" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/privacy/partner</a></li>
+                        <li>穿山甲官方合规指南：<a href="https://www.csjplatform.com/terms/compliance-guide" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/terms/compliance-guide</a></li>
+                        <li>穿山甲 Android SDK 接入说明：<a href="https://www.csjplatform.com/supportcenter/5397" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/supportcenter/5397</a></li>
+                    </ul>
+                </article>
+
+                <article class="section">
+                    <h2>4. 穿山甲广告 SDK 可能处理的信息类型</h2>
+                    <p>根据穿山甲官方公示及其 SDK 能力说明，广告 SDK 在实际运行中可能处理以下信息：</p>
+                    <ul>
+                        <li>设备基础信息与标识信息：如设备品牌、设备型号、操作系统版本、屏幕参数、OAID、Android ID 等；</li>
+                        <li>网络信息：如 IP 地址、网络连接状态、Wi‑Fi 状态、运营商信息、网络信号相关信息；</li>
+                        <li>应用信息：如应用包名、版本号、前后台状态、广告位信息；</li>
+                        <li>广告交互数据：如广告展示、点击、关闭、转化等交互行为；</li>
+                        <li>必要的日志、崩溃、性能与安全风控信息。</li>
+                    </ul>
+                    <p>如后续版本接入下载类广告，且你主动点击下载安装相关广告内容，还可能涉及广告下载过程、安装状态及与安装行为相关的信息处理。</p>
+                </article>
+
+                <article class="section">
+                    <h2>5. 权限申请与用途说明</h2>
+                    <p>结合当前 Android 版本的实际接入情况，本应用及已接入的广告 SDK 可能申请或使用以下权限：</p>
+                    <ul>
+                        <li><strong>INTERNET</strong>：用于访问远程广告开关、请求广告内容与完成必要的网络通信；</li>
+                        <li><strong>ACCESS_NETWORK_STATE</strong>：用于判断当前网络状态，保障广告请求与服务稳定性；</li>
+                        <li><strong>ACCESS_WIFI_STATE</strong>：用于识别 Wi‑Fi 连接状态，优化网络环境下的广告请求或下载行为；</li>
+                        <li><strong>REQUEST_INSTALL_PACKAGES</strong>：仅在你主动点击下载类广告并需要安装应用时，用于调起系统安装流程；</li>
+                        <li>系统媒体读写能力：仅在你主动选择照片或触发保存导出时，用于读取你选定的照片以及把生成结果保存到本机相册或存储位置。</li>
+                    </ul>
+                    <p>当前安装包未主动声明 READ_PHONE_STATE、精确定位、粗略定位、QUERY_ALL_PACKAGES、POST_NOTIFICATIONS 等穿山甲可选广告权限。如后续版本新增相关权限，我们会同步更新本隐私政策。</p>
+                </article>
+
+                <article class="section">
+                    <h2>6. 数据传输与第三方共享说明</h2>
+                    <p>本应用不提供账号系统、云端备份或联网图片处理能力，照片分析、颜色提取和卡片渲染均在设备本地完成。除广告服务所必需的设备信息、网络信息、广告交互数据以及稳定性保障信息外，我们不会向第三方共享、转让或公开披露你选择的原始照片、照片元数据或导出内容。</p>
+                    <p>与广告相关的必要信息可能由我们与北京巨量引擎网络技术有限公司及其广告合作方按照各自职责在去标识化、最小必要范围内处理，用于广告展示、监测归因、反作弊、频控与统计分析。</p>
+                </article>
+
+                <article class="section">
+                    <h2>7. 远程广告开关说明</h2>
+                    <p>当前版本会访问一个远程配置地址，用于判断该版本是否启用广告功能。该远程配置仅用于控制广告链路启停，不用于上传你的照片内容。若远程配置允许广告展示，应用才会继续启动广告 SDK；若远程配置关闭广告功能，应用会跳过广告相关初始化流程。</p>
+                </article>
+
+                <article class="section">
+                    <h2>8. 缓存、临时文件与本地保存</h2>
+                    <p>为完成图片读取、预览、动态照片解析、图片导出或广告素材加载，应用可能在设备缓存目录临时生成中间文件。这些缓存和临时文件仅在实现当前功能所需的合理期限内保存，不作为长期个人资料保存。</p>
+                    <p>你主动导出的图片结果将保存到你选择的本地存储位置或系统相册中；原始照片仍由你的系统相册或原始存储位置自行管理。</p>
+                </article>
+
+                <article class="section">
+                    <h2>9. 我们如何保护你的信息</h2>
+                    <p>我们重视个人信息安全，并采取与本应用形态相匹配的保护措施，包括依托系统权限校验、应用沙箱、文件隔离、签名校验、最小必要访问控制以及开发维护过程中的依赖检查与安全审计，降低未经授权访问、披露、篡改或丢失的风险。</p>
+                </article>
+
+                <article class="section">
+                    <h2>10. 你的选择与权利</h2>
+                    <p>你可以拒绝授予照片访问、保存或安装相关权限；拒绝后，对应图片处理、导出保存、下载类广告或广告效果可能受到影响。你也可以通过删除应用、清理缓存、删除导出结果或在系统设置中管理相关权限，来停止后续本地保留或限制可选信息处理。</p>
+                    <p>如你希望进一步了解或行使与第三方广告 SDK 相关的个人信息权利，也可以依据穿山甲官方公示页面中的说明进行查询，或通过本政策中的联系方式与我们联系。</p>
+                </article>
+
+                <article class="section">
+                    <h2>11. 未成年人保护</h2>
+                    <p>如你是未成年人，建议在监护人陪同下阅读并理解本隐私政策，并在取得监护人同意后使用相关功能。监护人如对未成年人个人信息保护有疑问，可通过本政策中的联系方式与我们联系。</p>
+                </article>
+
+                <article class="section">
+                    <h2>12. 政策更新</h2>
+                    <p>若应用功能、广告合作方式、权限申请范围、第三方 SDK 接入情况或个人信息处理方式发生变化，我们会同步更新本隐私政策，并在应用内、上架资料页或相关公示页面中公布最新版本。</p>
+                </article>
+            </div>
+
+            <p class="closing">
+                你继续使用 PhotoColours多彩照片 的相关功能，即表示你已阅读、理解并同意本隐私政策。若你不同意本政策的全部或部分内容，你应停止使用相关功能。
+            </p>
+        </section>
+    </main>
+</body>
+</html>
