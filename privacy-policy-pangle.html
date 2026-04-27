@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotoColours - 隐私政策（含穿山甲广告 SDK）</title>
-    <meta name="description" content="PhotoColours 隐私政策（含穿山甲广告 SDK 说明）">
+    <title>PhotoColours - 隐私政策</title>
+    <meta name="description" content="PhotoColours 隐私政策">
     <style>
         :root {
             --bg-top: #f1efe7;
@@ -51,29 +51,12 @@
             padding: 28px 24px 18px;
         }
 
-        .eyebrow {
-            margin: 0 0 10px;
-            color: var(--accent);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-        }
-
         h1 {
             margin: 0;
             font-family: "Times New Roman", Georgia, "Songti SC", serif;
             font-size: clamp(34px, 6vw, 56px);
             line-height: 1.03;
             letter-spacing: -0.03em;
-        }
-
-        .subtitle {
-            margin: 14px 0 0;
-            max-width: 760px;
-            color: var(--text-secondary);
-            font-size: clamp(15px, 2.8vw, 18px);
-            line-height: 1.82;
         }
 
         .panel {
@@ -89,40 +72,20 @@
             padding: 24px;
         }
 
-        .meta-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .meta-chip {
-            display: inline-flex;
-            align-items: center;
-            min-height: 36px;
-            padding: 0 14px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-size: 13px;
-            font-weight: 700;
-        }
-
         .sections {
             display: grid;
             gap: 16px;
-            margin-top: 18px;
         }
 
         .section {
-            padding: 20px 18px;
-            border-radius: var(--radius-lg);
-            background: var(--section-bg);
+            display: grid;
+            gap: 8px;
         }
 
         .section h2 {
-            margin: 0 0 10px;
+            margin: 0;
             color: #283145;
-            font-size: 19px;
+            font-size: 17px;
             line-height: 1.35;
             font-weight: 800;
         }
@@ -130,26 +93,8 @@
         .section p {
             margin: 0;
             color: var(--text-secondary);
-            font-size: 15px;
-            line-height: 1.92;
-        }
-
-        .section p + p,
-        .section ul,
-        .section ol {
-            margin-top: 10px;
-        }
-
-        .section ul,
-        .section ol {
-            padding-left: 22px;
-            color: var(--text-secondary);
-        }
-
-        .section li {
-            margin: 6px 0;
-            font-size: 15px;
-            line-height: 1.88;
+            font-size: 14px;
+            line-height: 1.58;
         }
 
         a {
@@ -163,9 +108,9 @@
 
         .closing {
             margin-top: 18px;
-            color: var(--text-muted);
-            font-size: 14px;
-            line-height: 1.82;
+            color: #7A8496;
+            font-size: 13px;
+            line-height: 1.54;
         }
 
         @media (min-width: 720px) {
@@ -183,10 +128,6 @@
 
             .sections {
                 gap: 18px;
-            }
-
-            .section {
-                padding: 22px 22px;
             }
         }
 
@@ -214,19 +155,13 @@
 <body>
     <main class="shell">
         <header class="hero">
-            <p class="eyebrow">PhotoColours</p>
             <h1>隐私政策</h1>
-            <p class="subtitle">
-                PhotoColours 是一款以本地图片处理为核心的应用，提供照片色盘提取、卡片排版、图片导出等功能。当前版本同时接入穿山甲广告 SDK，
-                用于广告展示与广告效果统计。本政策用于说明我们以及相关第三方如何处理你的个人信息。
-            </p>
         </header>
 
         <section class="panel content" aria-labelledby="privacy-policy-title">
-            <div class="meta-row">
-                <div class="meta-chip" id="privacy-policy-title">更新日期：2026年4月25日</div>
-                <div class="meta-chip">适用于：Android 版本（含穿山甲广告 SDK）</div>
-            </div>
+            <p class="section" id="privacy-policy-title">
+                <span style="font-size: 12px; color: #7B8498;">更新日期：2026年4月25日</span>
+            </p>
 
             <div class="sections">
                 <article class="section">
@@ -236,69 +171,37 @@
 
                 <article class="section">
                     <h2>2. 我们处理的本地图片信息</h2>
-                    <p>当你主动选择照片时，本应用会在设备本地处理与你所选照片相关的信息，包括照片像素内容、照片中可读取的拍摄时间、位置信息以及动态照片附带的本地元数据。这些处理用于完成颜色提取、背景色计算、卡片文案默认值生成、排版预览以及最终图片导出。</p>
-                    <p>除你主动导出或系统正常读写所必需的处理外，我们不会因为广告展示而上传你的原始照片、照片元数据或导出后的图片内容。</p>
+                    <p>当你主动选择照片时，本应用会在设备本地处理与你所选照片相关的信息，包括照片像素内容、照片中可读取的拍摄时间、位置信息以及动态照片附带的本地元数据。这些处理用于完成颜色提取、背景色计算、卡片文案默认值生成、排版预览以及最终图片导出。除你主动导出或系统正常读写所必需的处理外，我们不会因为广告展示而上传你的原始照片、照片元数据或导出后的图片内容。</p>
                 </article>
 
                 <article class="section">
                     <h2>3. 接入的第三方 SDK：穿山甲广告 SDK</h2>
-                    <p>当前版本接入了穿山甲广告 SDK，由北京巨量引擎网络技术有限公司提供，主要用于广告展示、广告请求与填充、广告监测归因、广告投放统计分析、反作弊、广告落地页适配与稳定性保障。</p>
-                    <p>按照当前版本的实现，只有在你阅读并同意本隐私政策后，应用才会启动广告相关服务。根据穿山甲官方公示，开发者需在隐私政策中向用户明示 SDK 名称、主体名称、处理个人信息种类及目的、隐私政策等内容；具体处理字段和是否启用，可能因 SDK 版本、系统版本、设备型号和广告类型而存在差异，以实际接入版本为准。</p>
-                    <ul>
-                        <li>穿山甲 SDK 服务基本信息公示与隐私说明：<a href="https://www.csjplatform.com/privacy/partner" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/privacy/partner</a></li>
-                        <li>穿山甲官方合规指南：<a href="https://www.csjplatform.com/terms/compliance-guide" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/terms/compliance-guide</a></li>
-                        <li>穿山甲 Android SDK 接入说明：<a href="https://www.csjplatform.com/supportcenter/5397" target="_blank" rel="noopener noreferrer">https://www.csjplatform.com/supportcenter/5397</a></li>
-                    </ul>
+                    <p>当前版本接入了穿山甲广告 SDK，由北京巨量引擎网络技术有限公司提供，主要用于广告展示、广告请求与填充、广告监测归因、广告投放统计分析、反作弊、广告落地页适配与稳定性保障。按照当前版本的实现，只有在你阅读并同意本隐私政策后，应用才会启动广告相关服务。根据穿山甲官方公示，开发者需在隐私政策中向用户明示 SDK 名称、主体名称、处理个人信息种类及目的、隐私政策等内容；具体处理字段和是否启用，可能因 SDK 版本、系统版本、设备型号和广告类型而存在差异，以实际接入版本为准。穿山甲 SDK 服务基本信息公示与隐私说明：https://www.csjplatform.com/privacy/partner 。穿山甲官方合规指南：https://www.csjplatform.com/terms/compliance-guide 。穿山甲 Android SDK 接入说明：https://www.csjplatform.com/supportcenter/5397 。</p>
                 </article>
 
                 <article class="section">
                     <h2>4. 穿山甲广告 SDK 可能处理的信息类型、字段、目的、方式与范围</h2>
-                    <p>根据穿山甲官方公示，穿山甲广告 SDK 在广告投放合作场景下可能处理以下信息：</p>
-                    <ul>
-                        <li>设备信息：设备品牌、型号、软件系统版本、屏幕密度、屏幕分辨率、设备语言、设备时区、SIM 卡信息（MCC&amp;MNC）、CPU 信息、可用存储空间大小、OAID、Android ID；在部分 Android 设备和系统版本下，还可能包括设备 MAC 地址以及设备标识符（如 IMEI、IMSI、ICCID、GAID、MEID、硬件序列号等），用于广告投放、广告反作弊，其中 Android ID、OAID、设备 MAC 地址、设备型号等还可能用于广告监测归因；</li>
-                        <li>网络信息：运营商信息、Wi‑Fi 状态、网络信号强度、IP 地址，用于保证网络服务有效性及稳定性，并用于广告投放、广告监测归因和广告反作弊；</li>
-                        <li>应用信息：应用包名、版本号、应用前后台状态、运行中的进程信息；在可选场景下，还可能包括软件列表信息、已安装应用列表、应用包名列表，用于广告投放、广告反作弊、广告落地页唤起适配和归因分析；</li>
-                        <li>传感器信息：在可选广告样式下，可能包括加速度传感器、陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器信息以及传感器列表，用于摇一摇、扭一扭等广告投放、广告反作弊以及个性化广告推荐相关能力；</li>
-                        <li>广告信息：对广告的展示、点击、关闭及转化等交互数据，用于广告监测归因、广告投放统计分析和广告反作弊；</li>
-                        <li>性能数据：如崩溃数据、性能数据，用于减少应用崩溃并提供稳定可靠的服务。</li>
-                    </ul>
-                    <p>上述信息的处理方式主要为 SDK 在你同意隐私政策后通过系统 API 读取、收集、记录相关字段，或在广告请求、广告展示、点击、关闭、下载、安装、转化、落地页唤起等环节生成相关数据；处理范围以广告服务、广告监测归因、广告反作弊、广告投放统计分析、广告落地页适配和稳定性保障所必需的最小范围为限。</p>
+                    <p>根据穿山甲官方公示，穿山甲广告 SDK 在广告投放合作场景下可能处理以下信息。设备信息：设备品牌、型号、软件系统版本、屏幕密度、屏幕分辨率、设备语言、设备时区、SIM 卡信息（MCC&amp;MNC）、CPU 信息、可用存储空间大小、OAID、Android ID；在部分 Android 设备和系统版本下，还可能包括设备 MAC 地址以及设备标识符（如 IMEI、IMSI、ICCID、GAID、MEID、硬件序列号等），用于广告投放、广告反作弊，其中 Android ID、OAID、设备 MAC 地址、设备型号等还可能用于广告监测归因。网络信息：运营商信息、Wi‑Fi 状态、网络信号强度、IP 地址，用于保证网络服务有效性及稳定性，并用于广告投放、广告监测归因和广告反作弊。应用信息：应用包名、版本号、应用前后台状态、运行中的进程信息；在可选场景下，还可能包括软件列表信息、已安装应用列表、应用包名列表，用于广告投放、广告反作弊、广告落地页唤起适配和归因分析。传感器信息：在可选广告样式下，可能包括加速度传感器、陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器信息以及传感器列表，用于摇一摇、扭一扭等广告投放、广告反作弊以及个性化广告推荐相关能力。广告信息：对广告的展示、点击、关闭及转化等交互数据，用于广告监测归因、广告投放统计分析和广告反作弊。性能数据：如崩溃数据、性能数据，用于减少应用崩溃并提供稳定可靠的服务。上述信息的处理方式主要为 SDK 在你同意隐私政策后通过系统 API 读取、收集、记录相关字段，或在广告请求、广告展示、点击、关闭、下载、安装、转化、落地页唤起等环节生成相关数据；处理范围以广告服务、广告监测归因、广告反作弊、广告投放统计分析、广告落地页适配和稳定性保障所必需的最小范围为限。</p>
                 </article>
 
                 <article class="section">
                     <h2>5. 软件列表、设备 MAC 地址、传感器列表的单独说明</h2>
-                    <p>为便于你充分理解并满足合规告知要求，我们对部分重点字段单独说明如下。</p>
-                    <ul>
-                        <li>软件列表信息、已安装应用列表、应用包名列表：处理目的为广告投放适配、广告落地页唤起、广告监测归因、广告反作弊与安全风控；处理方式为穿山甲广告 SDK 在你同意隐私政策后通过系统接口读取或获取相关列表信息；处理范围为广告服务所必需的最小范围。</li>
-                        <li>设备 MAC 地址、Wi‑Fi 标识信息：处理目的为广告监测归因、广告投放、广告反作弊、网络环境识别与服务稳定性保障；处理方式为穿山甲广告 SDK 在系统允许返回相关字段的情况下进行读取或获取；处理范围为广告归因、反作弊和服务保障所必需的最小范围。</li>
-                        <li>传感器列表、传感器信息：包括加速度传感器、陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器及相关传感器列表；处理目的为摇一摇、扭一扭等互动广告投放、广告反作弊以及相关广告样式适配；处理方式为穿山甲广告 SDK 在相应广告样式触发时通过系统接口读取、获取或调用；处理范围为特定广告样式展示、识别和反作弊所必需的最小范围。</li>
-                    </ul>
+                    <p>为便于你充分理解并满足合规告知要求，我们对部分重点字段单独说明如下。软件列表信息、已安装应用列表、应用包名列表：处理目的为广告投放适配、广告落地页唤起、广告监测归因、广告反作弊与安全风控；处理方式为穿山甲广告 SDK 在你同意隐私政策后通过系统接口读取或获取相关列表信息；处理范围为广告服务所必需的最小范围。设备 MAC 地址、Wi‑Fi 标识信息：处理目的为广告监测归因、广告投放、广告反作弊、网络环境识别与服务稳定性保障；处理方式为穿山甲广告 SDK 在系统允许返回相关字段的情况下进行读取或获取；处理范围为广告归因、反作弊和服务保障所必需的最小范围。传感器列表、传感器信息：包括加速度传感器、陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器及相关传感器列表；处理目的为摇一摇、扭一扭等互动广告投放、广告反作弊以及相关广告样式适配；处理方式为穿山甲广告 SDK 在相应广告样式触发时通过系统接口读取、获取或调用；处理范围为特定广告样式展示、识别和反作弊所必需的最小范围。</p>
                 </article>
 
                 <article class="section">
                     <h2>6. 权限申请与用途说明</h2>
-                    <p>结合当前 Android 版本的实际接入情况，本应用及已接入的广告 SDK 可能申请或使用以下权限：</p>
-                    <ul>
-                        <li><strong>INTERNET</strong>：用于访问远程广告开关、请求广告内容与完成必要网络通信；</li>
-                        <li><strong>ACCESS_NETWORK_STATE</strong>：用于判断网络状态并保障广告服务稳定性；</li>
-                        <li><strong>ACCESS_WIFI_STATE</strong>：用于识别 Wi‑Fi 连接状态并优化广告请求；</li>
-                        <li><strong>REQUEST_INSTALL_PACKAGES</strong>：仅在你主动点击下载类广告且需要安装应用时用于调起系统安装流程；</li>
-                        <li>系统媒体读写能力：仅在你主动选择照片或保存导出时用于读取你选定的照片及保存生成结果。</li>
-                    </ul>
-                    <p>当前安装包未主动声明 READ_PHONE_STATE、精确定位、粗略定位、QUERY_ALL_PACKAGES、POST_NOTIFICATIONS 等穿山甲可选广告权限。如后续版本新增相关权限，我们会同步更新本隐私政策。</p>
+                    <p>结合当前 Android 版本的实际接入情况，本应用及已接入的广告 SDK 可能申请或使用以下权限：INTERNET，用于访问远程广告开关、请求广告内容与完成必要网络通信；ACCESS_NETWORK_STATE，用于判断网络状态并保障广告服务稳定性；ACCESS_WIFI_STATE，用于识别 Wi‑Fi 连接状态并优化广告请求；REQUEST_INSTALL_PACKAGES，仅在你主动点击下载类广告且需要安装应用时用于调起系统安装流程；系统媒体读写能力，仅在你主动选择照片或保存导出时用于读取你选定的照片及保存生成结果。当前安装包未主动声明 READ_PHONE_STATE、精确定位、粗略定位、QUERY_ALL_PACKAGES、POST_NOTIFICATIONS 等穿山甲可选广告权限；如后续版本新增相关权限或能力，我们会同步更新本隐私政策。</p>
                 </article>
 
                 <article class="section">
-                    <h2>7. 数据传输与第三方共享说明</h2>
-                    <p>本应用不提供账号系统、云端备份或联网图片处理能力，照片分析、颜色提取和卡片渲染均在设备本地完成。除广告服务所必需的信息外，我们不会向第三方共享、转让或公开披露你选择的原始照片、照片元数据或导出内容。</p>
-                    <p>与广告相关的必要信息可能由我们与北京巨量引擎网络技术有限公司及其广告合作方按照各自职责在去标识化、最小必要范围内处理；相关信息可能包括设备信息、网络信息、应用信息、软件列表信息、已安装应用列表、设备 MAC 地址、传感器列表、传感器信息、广告交互数据以及必要的崩溃和性能数据；处理目的主要为广告展示、广告请求与填充、广告落地页唤起适配、广告监测归因、广告反作弊、统计分析和稳定性保障。</p>
-                    <p>根据穿山甲官方公示，穿山甲广告 SDK 为实现特定功能还可能接入合作方 SDK，具体合作方范围及信息处理情况以其官方公示页面和当时实际接入版本为准。</p>
+                    <h2>7. 数据传输与共享说明</h2>
+                    <p>本应用不提供账号系统、云端备份或联网图片处理能力，照片分析、颜色提取和卡片渲染均在设备本地完成。除广告服务所必需的信息外，我们不会向第三方共享、转让或公开披露你选择的原始照片、照片元数据或导出内容。与广告相关的必要信息可能由我们与北京巨量引擎网络技术有限公司及其广告合作方按照各自职责在去标识化、最小必要范围内处理；相关信息可能包括设备信息、网络信息、应用信息、软件列表信息、已安装应用列表、设备 MAC 地址、传感器列表、传感器信息、广告交互数据以及必要的崩溃和性能数据；处理目的主要为广告展示、广告请求与填充、广告落地页唤起适配、广告监测归因、广告反作弊、统计分析和稳定性保障。根据穿山甲官方公示，穿山甲广告 SDK 为实现特定功能还可能接入合作方 SDK，具体合作方范围及信息处理情况以其官方公示页面和当时实际接入版本为准。</p>
                 </article>
 
                 <article class="section">
                     <h2>8. 缓存、临时文件与本地保存</h2>
-                    <p>为完成图片读取、预览、动态照片解析、图片导出或广告素材加载，应用可能在设备缓存目录临时生成中间文件。这些缓存和临时文件仅在实现当前功能所需的合理期限内保存，不作为长期个人资料保存。</p>
-                    <p>你主动导出的图片结果将保存到你选择的本地存储位置或系统相册中；原始照片仍由你的系统相册或原始存储位置自行管理。</p>
+                    <p>为完成图片读取、预览、动态照片解析、图片导出或广告素材加载，应用可能在设备缓存目录临时生成中间文件。这些缓存和临时文件仅在实现当前功能所需的合理期限内保存，不作为长期个人资料保存。你主动导出的图片结果将保存到你选择的本地存储位置或系统相册中；原始照片仍由你的系统相册或原始存储位置自行管理。</p>
                 </article>
 
                 <article class="section">
@@ -308,8 +211,7 @@
 
                 <article class="section">
                     <h2>10. 你的选择与权利</h2>
-                    <p>你可以拒绝授予照片访问、保存或安装相关权限；拒绝后，对应图片处理、导出保存、下载类广告或广告效果可能受到影响。你也可以在首次弹窗中选择不同意本隐私政策，不同意后应用不会继续提供需要读取照片或启动广告 SDK 的功能页面；在已同意后，你仍可通过删除应用、清理缓存、删除导出结果或在系统设置中管理相关权限，来停止后续本地保留或限制可选信息处理。</p>
-                    <p>如你希望进一步了解或行使与第三方广告 SDK 相关的个人信息权利，也可以依据穿山甲官方公示页面中的说明进行查询，或通过本政策中的联系方式与我们联系。</p>
+                    <p>你可以拒绝授予照片访问、保存或安装相关权限；拒绝后，对应图片处理、导出保存、下载类广告或广告效果可能受到影响。你也可以在首次弹窗中选择不同意本隐私政策，不同意后应用不会继续提供需要读取照片或启动广告 SDK 的功能页面；在已同意后，你仍可通过删除应用、清理缓存、删除导出结果或在系统设置中管理相关权限，来停止后续本地保留或限制可选信息处理。如你希望进一步了解或行使与第三方广告 SDK 相关的个人信息权利，也可以依据穿山甲官方公示页面中的说明进行查询，或通过本政策中的联系方式与我们联系。</p>
                 </article>
 
                 <article class="section">
@@ -324,7 +226,7 @@
             </div>
 
             <p class="closing">
-                你继续使用 PhotoColours 的相关功能，即表示你已阅读、理解并同意本隐私政策。若你不同意本政策的全部或部分内容，你应停止使用相关功能。
+                如你继续点击“同意并继续”，即表示你已阅读、理解并接受以上内容。
             </p>
         </section>
     </main>
