@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - 科目二驾考模拟器</title>
+  <style>
+    :root {
+      --bg-start: #fbf8f2;
+      --bg-end: #f3e9d6;
+      --card-bg: #fdfcf9;
+      --card-border: #e7dcc8;
+      --text-main: #1f2937;
+      --text-sub: #4b5563;
+      --text-muted: #8a5a14;
+      --tag-bg: #f7e7c6;
+      --back-bg: #fff8ec;
+      --back-border: #e4cfa5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text-main);
+      background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(120, 87, 33, 0.08);
+    }
+
+    .back {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid var(--back-border);
+      border-radius: 999px;
+      background: var(--back-bg);
+      color: #946200;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--tag-bg);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 16px 0 0;
+      font-size: 30px;
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    .meta {
+      margin-top: 10px;
+      color: var(--text-sub);
+      font-size: 16px;
+      line-height: 1.5;
+      white-space: pre-line;
+    }
+
+    .section {
+      margin-top: 18px;
+      font-size: 16px;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 16px;
+      }
+
+      .card {
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <a class="back" href="javascript:history.back()">返回</a>
+      <div class="tag">政策文档</div>
+      <h1>隐私政策</h1>
+      <div class="meta">《科目二驾考模拟器》
+开发者：滨州幻境网络科技有限公司
+发布日期：2026年5月5日
+生效日期：2026年5月5日
+更新日期：2026年5月5日</div>
+
+      <div class="section">欢迎你使用《科目二驾考模拟器》。我们非常重视你的个人信息和隐私保护。本政策用于说明我们如何处理你的个人信息以及你享有的相关权利。请你在点击同意并继续前仔细阅读。</div>
+
+      <div class="section">一、处理规则说明
+
+1. 首次启动时，我们会先展示隐私政策和用户协议。只有在你点击同意并继续后，应用才会进入 Unity 运行界面。
+2. 在你点击同意并继续前，我们不会启动 Unity3D 游戏引擎，也不会处理本政策中列明的 Android ID、设备传感器信息及相关运行日志。
+3. 你点击不同意时，应用将退出，不会进入游戏运行页面。</div>
+
+      <div class="section">二、我们可能处理的信息
+
+在你点击同意并继续后，为保障应用运行、设备适配和故障排查，我们可能处理以下信息：
+1. 设备与应用基础信息：例如设备型号、操作系统版本、屏幕分辨率、屏幕方向、应用版本、网络状态等。
+2. Android ID：用于识别同一设备上的安装实例、定位兼容性问题和分析崩溃原因。我们不会将 Android ID 用于个性化广告定向。
+3. 设备传感器信息：例如加速度传感器、陀螺仪、重力传感器等设备实际提供的传感器信息，用于 Unity3D 引擎进行设备方向识别、输入适配、场景运行兼容性分析和异常排查；如你的设备不提供相应传感器，则不会处理对应信息。
+4. 日志与崩溃信息：例如启动、卡顿、闪退、功能调用结果等日志，用于定位问题、修复故障和提升稳定性。</div>
+
+      <div class="section">三、处理目的、方式和范围
+
+1. 处理目的：用于提供 Unity 场景渲染与交互、识别设备兼容性、完成横屏适配、排查崩溃问题并保障应用安全稳定运行。
+2. 处理方式：在你同意后，由集成于安装包内的 Unity3D 游戏引擎库在终端本地调用 Android 系统接口进行读取和处理。
+3. 处理范围：仅限本应用运行期间产生或可由系统接口返回的本机信息，不涉及通讯录、短信、通话记录、相册、精确位置等无关信息。</div>
+
+      <div class="section">四、第三方 SDK 与引擎清单
+
+1. 名称：Unity3D 游戏引擎库
+开发者：Unity Technologies
+处理信息：设备与应用基础信息、Android ID、设备传感器信息、日志与崩溃信息
+使用目的：提供 3D 游戏运行能力、设备适配、兼容性分析和故障排查
+处理方式：随安装包集成，在你同意后于终端本地运行时调用系统接口处理
+共享情况：当前版本未接入广告、推送、统计、登录类第三方 SDK，也不会向前述类型第三方 SDK 提供你的个人信息。</div>
+
+      <div class="section">五、信息共享、披露与存储
+
+1. 我们不会出售你的个人信息。
+2. 除法律法规要求、行政司法机关依法提出要求，或为保护用户、开发者及社会公众合法权益所必需外，我们不会向无关第三方共享或披露你的个人信息。
+3. 相关信息主要在你的设备本地处理；如因问题排查确需你主动提交日志或截图，我们会在对应场景中另行提示。</div>
+
+      <div class="section">六、你的权利与撤回同意
+
+1. 你有权查阅本隐私政策，了解我们处理个人信息的规则。
+2. 你可以通过清除应用数据、卸载应用或联系我们的方式撤回同意。撤回后，我们将停止后续处理，但撤回前基于你同意开展的处理不受影响。
+3. 若你不同意本政策的全部或部分内容，请不要点击同意并继续。</div>
+
+      <div class="section">七、信息保护与未成年人保护
+
+1. 我们会采取合理可行的安全措施，尽力防止信息遭到未经授权的访问、披露、篡改或丢失。
+2. 如果你是未成年人，请在监护人陪同下阅读本隐私政策，并在取得监护人同意后使用本应用。</div>
+
+      <div class="section">八、联系我们
+
+如果你对本隐私政策或相关问题有任何疑问、意见或建议，可以通过以下邮箱与我们联系：
+1529856440@qq.com</div>
+    </section>
+  </main>
+</body>
+</html>
