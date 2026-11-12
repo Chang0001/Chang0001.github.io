@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 · 疯狂来整理</title>
+<meta name="description" content="《疯狂来整理》隐私政策：本应用不收集任何个人信息，全程离线运行。">
+<style>
+  :root{
+    --orange:#F7B03B; --orange-deep:#E08A1E; --cream:#FFF8EC;
+    --ink:#6B4B2A; --ink-soft:#8A6B4A; --line:#EFE0C8;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 16px 60px;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:linear-gradient(180deg,#FDF3E2 0%,#FFF9F0 240px,#FFFDF8 100%);
+    color:var(--ink); line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  header{
+    padding:44px 0 26px; text-align:center;
+  }
+  .icon{
+    width:76px;height:76px;border-radius:19px;margin:0 auto 16px;
+    background:linear-gradient(160deg,#FFD066,#F0902B);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px rgba(224,138,30,.28); font-size:38px;
+  }
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:.5px}
+  .sub{font-size:13px;color:var(--ink-soft)}
+  .lang{display:flex;justify-content:center;gap:8px;margin:18px 0 6px}
+  .lang button{
+    border:1px solid var(--line);background:#fff;color:var(--ink-soft);
+    padding:6px 16px;border-radius:999px;font-size:13px;cursor:pointer;
+  }
+  .lang button.on{background:var(--orange);border-color:var(--orange);color:#fff;font-weight:600}
+  main{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:10px 24px 26px;margin-top:18px;
+    box-shadow:0 6px 22px rgba(196,150,90,.10);
+  }
+  section{padding:18px 0;border-bottom:1px solid var(--line)}
+  section:last-child{border-bottom:none}
+  h2{font-size:16px;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+  h2 .n{
+    flex:none;width:22px;height:22px;border-radius:50%;
+    background:#FFF1DA;color:var(--orange-deep);
+    font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:700;
+  }
+  p,li{font-size:14.5px;margin:6px 0;color:#5F4429}
+  ul{margin:6px 0;padding-left:20px}
+  .tag{
+    display:inline-block;background:#EAF8F5;color:#2E8B7F;
+    font-size:12px;padding:2px 9px;border-radius:6px;margin-right:6px;
+  }
+  .hl{background:#FFF1DA;border-radius:8px;padding:12px 14px;font-size:14px;margin-top:8px}
+  footer{text-align:center;font-size:12px;color:#A98F72;padding:28px 0 0}
+  a{color:var(--orange-deep)}
+  .en{display:none}
+  body.en-mode .zh{display:none}
+  body.en-mode .en{display:block}
+  @media (prefers-color-scheme:dark){
+    body{background:linear-gradient(180deg,#1A1611 0%,#16130F 240px,#16130F 100%);color:#EDE2D2}
+    main{background:#1E1A15;border-color:#332B22}
+    p,li{color:#CFC0AC}
+    h2{color:#EDE2D2}
+    h2 .n{background:#3A2F20;color:#F0B45B}
+    section{border-color:#332B22}
+    .hl{background:#2A2217;color:#E8D9C3}
+    .tag{background:#1F3A35;color:#6FD3C4}
+    .lang button{background:#1E1A15;border-color:#3A3227;color:#B7A48C}
+    .lang button.on{background:var(--orange);border-color:var(--orange);color:#2A1B08}
+    a{color:#F0B45B}
+    .sub{color:#A08B70}
+    footer{color:#8A7761}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="icon">🧹</div>
+    <h1 class="zh">隐私政策</h1>
+    <h1 class="en">Privacy Policy</h1>
+    <div class="sub zh">疯狂来整理 · 寻找隐藏的物品</div>
+    <div class="sub en">Tidy Up Frenzy — Find the Hidden Objects</div>
+    <div class="lang">
+      <button id="btn-zh" class="on" onclick="setLang('zh')">中文</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 中文 -->
+    <div class="zh">
+        <p style="color:#8A6B4A;font-size:13.5px">感谢你使用「疯狂来整理」。我们非常重视你的隐私。本政策说明本 App 如何处理与你有关的信息。</p>
+      <section>
+        <h2><span class="n">1</span>一、我们不收集任何个人信息</h2>
+        <p>本 App 不需要注册或登录，不收集你的姓名、手机号、邮箱、位置、通讯录、照片、设备标识符或任何可识别个人身份的信息。</p>
+      </section>
+      <section>
+        <h2><span class="n">2</span>二、App 不联网</h2>
+        <p>本 App 的全部内容（关卡、图片、音乐、音效）都随安装包一起提供，运行过程中不会向任何服务器发送数据，也不会下载任何内容。</p>
+      </section>
+      <section>
+        <h2><span class="n">3</span>三、仅保存在本机的数据</h2>
+        <p>为了记住你的游戏进度，本 App 会在你的设备本地保存以下内容：</p>
+        <p style="margin-left:20px">· 已通关的关卡与星级</p>
+        <p style="margin-left:20px">· 每关的最佳用时</p>
+        <p style="margin-left:20px">· 音乐 / 音效 / 震动 开关状态</p>
+        <p>这些数据只存在于你的设备上，不会上传，我们也无法访问。卸载 App 即会一并删除。</p>
+      </section>
+      <section>
+        <h2><span class="n">4</span>四、没有第三方服务</h2>
+        <p>本 App 不集成任何第三方统计、广告、推送或社交 SDK，不会与任何第三方共享信息。</p>
+      </section>
+      <section>
+        <h2><span class="n">5</span>五、没有广告与内购</h2>
+        <p>本 App 不含广告，也不含任何应用内购买。</p>
+      </section>
+      <section>
+        <h2><span class="n">6</span>六、儿童隐私</h2>
+        <p>本 App 适合所有年龄段，不收集任何用户（包括儿童）的个人信息。</p>
+      </section>
+      <section>
+        <h2><span class="n">7</span>七、政策更新</h2>
+        <p>如果将来本政策发生变化，我们会在 App 内更新本页面，并修改下方的生效日期。</p>
+      </section>
+      <section>
+        <h2><span class="n">8</span>八、联系我们</h2>
+        <p>如对本政策有任何疑问，请通过「设置 → 用户反馈」联系我们。</p>
+      </section>
+
+    </div>
+
+    <!-- English -->
+    <div class="en">
+        <p style="color:#8A6B4A;font-size:13.5px">Thank you for using Tidy Up Frenzy. We take your privacy seriously. This policy explains how the app handles information related to you.</p>
+      <section>
+        <h2><span class="n">1</span>1. We collect no personal information</h2>
+        <p>The app requires no registration or login. We do not collect your name, phone number, email, location, contacts, photos, device identifiers, or any other personally identifiable information.</p>
+      </section>
+      <section>
+        <h2><span class="n">2</span>2. The app does not connect to the internet</h2>
+        <p>All content (levels, images, music, sound effects) is bundled with the app. Nothing is sent to any server and nothing is downloaded at runtime.</p>
+      </section>
+      <section>
+        <h2><span class="n">3</span>3. Data stored only on your device</h2>
+        <p>To remember your progress, the app stores the following locally:</p>
+        <p style="margin-left:20px">· Completed levels and earned stars</p>
+        <p style="margin-left:20px">· Best completion time per level</p>
+        <p style="margin-left:20px">· Music / sound / haptics toggle states</p>
+        <p>This data exists only on your device and is never uploaded; we have no access to it. Deleting the app removes it.</p>
+      </section>
+      <section>
+        <h2><span class="n">4</span>4. No third-party services</h2>
+        <p>The app integrates no third-party analytics, advertising, push, or social SDKs, and shares no information with any third party.</p>
+      </section>
+      <section>
+        <h2><span class="n">5</span>5. No ads, no in-app purchases</h2>
+        <p>The app contains no advertising and no in-app purchases.</p>
+      </section>
+      <section>
+        <h2><span class="n">6</span>6. Children's privacy</h2>
+        <p>The app is suitable for all ages and does not collect personal information from any user, including children.</p>
+      </section>
+      <section>
+        <h2><span class="n">7</span>7. Changes to this policy</h2>
+        <p>If this policy changes, we will update this page inside the app and revise the effective date below.</p>
+      </section>
+      <section>
+        <h2><span class="n">8</span>8. Contact us</h2>
+        <p>If you have any questions about this policy, please contact us via Settings → Feedback in the app.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="zh">生效日期：2026 年 11 月 12 日 · 最后更新：2026 年 11 月 12 日</div>
+    <div class="en">Effective date: November 12, 2026 · Last updated: November 12, 2026</div>
+    <div style="margin-top:8px">© 2026 疯狂来整理</div>
+  </footer>
+</div>
+
+<script>
+function setLang(l){
+  document.body.classList.toggle('en-mode', l === 'en');
+  document.getElementById('btn-zh').classList.toggle('on', l === 'zh');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  document.documentElement.lang = l === 'en' ? 'en' : 'zh-CN';
+}
+</script>
+</body>
+</html>
