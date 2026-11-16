@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>隐私政策 · 手表钢琴家</title>
+<meta name="description" content="手表钢琴家的隐私政策：本地运行，无需账号，不上传任何数据。">
+<meta name="theme-color" content="#090b10">
+<meta property="og:title" content="隐私政策 · 手表钢琴家">
+<meta property="og:description" content="本地运行，无需账号，不上传任何数据。">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #090b10;
+    --bg-soft: #0d1017;
+    --card: rgba(255, 255, 255, 0.045);
+    --stroke: rgba(255, 255, 255, 0.09);
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.52);
+    --muted-2: rgba(255, 255, 255, 0.34);
+    --accent: #59dcff;
+    --pink: #ff75ad;
+    --green: #59f0a0;
+    --radius: 18px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { max-width: 100%; overflow-x: hidden; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro SC", "PingFang SC",
+                 "Helvetica Neue", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 顶部光晕 */
+  .glow {
+    position: fixed;
+    inset: -30vh 0 auto 0;
+    height: 70vh;
+    background:
+      radial-gradient(60% 55% at 25% 15%, rgba(89, 220, 255, 0.14), transparent 70%),
+      radial-gradient(50% 45% at 78% 8%, rgba(255, 117, 173, 0.12), transparent 72%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 56px 22px 96px;
+  }
+
+  /* 头部 */
+  .hero { margin-bottom: 34px; }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 26px;
+  }
+
+  .mark {
+    width: 46px;
+    height: 54px;
+    flex: none;
+  }
+
+  .brand-text small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2.4px;
+    color: var(--muted-2);
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(100deg, #ffffff 20%, var(--accent) 62%, var(--pink) 96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .pill {
+    font-size: 12px;
+    color: var(--muted);
+    padding: 5px 11px;
+    border: 1px solid var(--stroke);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* 摘要 */
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 26px 0 40px;
+  }
+
+  .summary div {
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    border-radius: 14px;
+    padding: 14px 14px 12px;
+  }
+
+  .summary b {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #fff;
+  }
+
+  .summary span {
+    font-size: 11.5px;
+    color: var(--muted-2);
+    line-height: 1.6;
+  }
+
+  .summary i {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    margin-right: 6px;
+    vertical-align: 1px;
+  }
+
+  /* 章节 */
+  section {
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    padding: 22px 22px 20px;
+    margin-bottom: 14px;
+    scroll-margin-top: 24px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  h2 .num {
+    flex: none;
+    font-size: 11px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    background: rgba(89, 220, 255, 0.11);
+    border: 1px solid rgba(89, 220, 255, 0.22);
+    border-radius: 7px;
+    padding: 3px 7px;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    margin: 18px 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h3:first-of-type { margin-top: 6px; }
+
+  p { margin: 8px 0; color: rgba(255, 255, 255, 0.78); }
+
+  ul { margin: 8px 0; padding-left: 18px; }
+
+  li { margin: 5px 0; color: rgba(255, 255, 255, 0.78); }
+
+  strong { color: #fff; font-weight: 700; }
+
+  em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    padding: 1px 5px;
+  }
+
+  /* 表格 */
+  .table-scroll {
+    overflow-x: auto;
+    margin: 12px 0 4px;
+    border: 1px solid var(--stroke);
+    border-radius: 12px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    vertical-align: top;
+  }
+
+  th {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.035);
+    white-space: nowrap;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* 高亮块 */
+  .callout {
+    display: flex;
+    gap: 11px;
+    margin: 14px 0 4px;
+    padding: 13px 15px;
+    border-radius: 13px;
+    background: rgba(89, 220, 255, 0.07);
+    border: 1px solid rgba(89, 220, 255, 0.18);
+  }
+
+  .callout.ok {
+    background: rgba(89, 240, 160, 0.07);
+    border-color: rgba(89, 240, 160, 0.2);
+  }
+
+  .callout p { margin: 0; font-size: 13.5px; }
+
+  .callout .dot {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    border-radius: 999px;
+    background: var(--green);
+    color: #04120a;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  /* 目录 */
+  .toc {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    padding: 10px 0 12px;
+    margin-bottom: 18px;
+    background: linear-gradient(var(--bg) 72%, transparent);
+    scrollbar-width: none;
+  }
+
+  .toc::-webkit-scrollbar { display: none; }
+
+  .toc a {
+    flex: none;
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 5px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--stroke);
+    background: rgba(255, 255, 255, 0.03);
+    transition: color .18s, border-color .18s, background .18s;
+  }
+
+  .toc a:hover {
+    color: #fff;
+    border-color: rgba(89, 220, 255, 0.35);
+    background: rgba(89, 220, 255, 0.08);
+  }
+
+  /* 页脚 */
+  footer {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    color: var(--muted-2);
+    font-size: 12px;
+    text-align: center;
+    line-height: 2;
+  }
+
+  footer .tagline {
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  /* 窄屏 */
+  @media (max-width: 560px) {
+    .wrap { padding: 38px 16px 72px; }
+    table { min-width: 0; font-size: 12.5px; }
+    th, td { padding: 9px 10px; }
+    th { white-space: normal; }
+    h1 { font-size: 27px; }
+    .summary { grid-template-columns: 1fr; }
+    section { padding: 18px 16px 16px; }
+    body { font-size: 14.5px; }
+  }
+
+  /* 打印 / 导出 PDF */
+  @media print {
+    :root {
+      --bg: #fff;
+      --bg-soft: #fff;
+      --card: #fff;
+      --stroke: rgba(0, 0, 0, 0.12);
+      --text: #111;
+      --muted: #555;
+      --muted-2: #666;
+    }
+    .glow, .toc { display: none; }
+    body { background: #fff; color: #111; font-size: 11.5pt; }
+    .wrap { max-width: none; padding: 0; }
+    h1 { -webkit-text-fill-color: #111; color: #111; background: none; font-size: 22pt; }
+    section {
+      break-inside: avoid;
+      border-radius: 0;
+      border: none;
+      border-top: 1px solid #ddd;
+      padding: 12pt 0;
+      margin: 0;
+    }
+    p, li, td { color: #111; }
+    strong { color: #000; }
+    .summary { display: none; }
+    a { color: #111; text-decoration: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 46 54" fill="none" aria-hidden="true">
+        <rect x="4" y="6" width="38" height="42" rx="12" stroke="url(#g1)" stroke-width="2"/>
+        <rect x="1.5" y="17" width="2.5" height="9" rx="1.2" fill="url(#g1)" opacity=".55"/>
+        <rect x="42" y="17" width="2.5" height="9" rx="1.2" fill="url(#g1)" opacity=".55"/>
+        <path d="M12 34h3v-6h3v6h3v-9h3v9h3v-5h3" stroke="url(#g1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="g1" x1="4" y1="6" x2="42" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#59dcff"/>
+            <stop offset="1" stop-color="#ff75ad"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="brand-text">
+        <small>WATCH · INSTRUMENT</small>
+        <strong>手表钢琴家</strong>
+      </div>
+    </div>
+
+    <h1>隐私政策</h1>
+
+    <div class="meta">
+      <span class="pill">更新日期：2026 年 11 月 16 日</span>
+      <span class="pill">生效日期：2026 年 11 月 16 日</span>
+      <span class="pill">适用于 iOS 与 watchOS</span>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div><b><i style="background:#59f0a0"></i>不收集</b><span>没有账号，不采集任何可识别个人身份的信息</span></div>
+    <div><b><i style="background:#59dcff"></i>不上传</b><span>动作数据在设备本地处理完即丢弃，没有服务器</span></div>
+    <div><b><i style="background:#ff75ad"></i>无第三方</b><span>不含广告 SDK、统计 SDK 与社交登录</span></div>
+  </div>
+
+  <nav class="toc" aria-label="目录">
+    <a href="#s1">一、处理哪些信息</a>
+    <a href="#s2">二、不收集什么</a>
+    <a href="#s3">三、系统权限</a>
+    <a href="#s4">四、存储与删除</a>
+    <a href="#s5">五、数据共享</a>
+    <a href="#s6">六、儿童隐私</a>
+    <a href="#s7">七、你的权利</a>
+    <a href="#s8">八、政策更新</a>
+    <a href="#s9">九、联系我们</a>
+  </nav>
+
+  <p>「手表钢琴家」是一款在 Apple Watch 上用手腕动作演奏乐器的 App，配套一个 iPhone 伴侣 App。我们不提供账号系统，也不运营任何服务器。</p>
+
+  <section id="s1">
+    <h2><span class="num">01</span>我们处理哪些信息</h2>
+
+    <h3>1. 手腕运动数据（CoreMotion）</h3>
+    <p>仅在你点击「开始演奏」之后采集，用于识别敲击、扫弦、运弓等动作。这些数据在你的设备上实时处理，<strong>处理完立即丢弃，不会保存、不会上传</strong>。</p>
+
+    <h3>2. 演奏状态</h3>
+    <p>当前音高、进度、和弦、演奏模式。仅在与<strong>你自己配对的</strong>手表之间通过 WatchConnectivity 传输，用于让手机显示曲谱进度。<strong>不经过互联网</strong>。</p>
+
+    <h3>3. 本地偏好设置</h3>
+    <p>选中的歌曲、最近演奏的三首歌曲、灵敏度参数、钢琴音色。保存在设备的 <code>UserDefaults</code> 中，仅用于下次打开时恢复你的选择。</p>
+
+    <h3>4. 你主动导入的谱子 / 文件</h3>
+    <p>仅保存在本机，不会上传。</p>
+  </section>
+
+  <section id="s2">
+    <h2><span class="num">02</span>我们不收集什么</h2>
+    <p>我们不收集、不请求、也无法访问：</p>
+    <ul>
+      <li>姓名、手机号、邮箱</li>
+      <li>通讯录、日历</li>
+      <li>位置信息</li>
+      <li>相册、麦克风录音</li>
+      <li>健康数据（HealthKit）</li>
+      <li>广告标识符（IDFA）</li>
+      <li>剪贴板内容</li>
+    </ul>
+    <div class="callout ok">
+      <span class="dot">✓</span>
+      <p>App 内<strong>不含任何第三方广告 SDK、分析统计 SDK 或社交登录</strong>。</p>
+    </div>
+  </section>
+
+  <section id="s3">
+    <h2><span class="num">03</span>系统权限说明</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>权限</th><th>用途</th><th>数据去向</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>运动与健身</td><td>读取手腕加速度与角速度，识别演奏动作</td><td>仅设备本地</td></tr>
+          <tr><td>网络</td><td>系统级 WatchConnectivity（手机 ↔ 配对手表）</td><td>仅在你的两台设备之间</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>以上权限都可以在「设置 → 隐私」中随时关闭。关闭后对应的演奏功能无法使用，但 App 仍可浏览曲谱。</p>
+  </section>
+
+  <section id="s4">
+    <h2><span class="num">04</span>数据存储与删除</h2>
+    <p>所有数据都保存在你自己的设备上（iPhone 与 Apple Watch 的 App 沙盒内）。</p>
+    <div class="callout">
+      <span class="dot" style="background:#59dcff">i</span>
+      <p><strong>卸载 App 即全部删除。</strong>我们无法远程查看或删除这些数据，因为服务器上根本没有副本。</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="num">05</span>数据共享</h2>
+    <p>我们<strong>不出售、不共享、不转让</strong>任何用户数据给第三方。</p>
+    <p>唯一的数据流转发生在<strong>你自己的 iPhone 和你自己配对的手表之间</strong>。</p>
+  </section>
+
+  <section id="s6">
+    <h2><span class="num">06</span>儿童隐私</h2>
+    <p>本 App 不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+    <p>由于我们本身不收集任何可识别个人身份的信息，儿童使用本 App 不会产生此类数据。</p>
+  </section>
+
+  <section id="s7">
+    <h2><span class="num">07</span>你的权利</h2>
+    <p>你可以随时：</p>
+    <ul>
+      <li>在「我的 → 演奏记录」中查看本地保存的内容</li>
+      <li>重置灵敏度参数，恢复默认设置</li>
+      <li>卸载 App 以删除全部本地数据</li>
+    </ul>
+    <p>由于我们不持有你的任何数据，<strong>无需提交任何申请</strong>即可完成上述操作。</p>
+  </section>
+
+  <section id="s8">
+    <h2><span class="num">08</span>政策更新</h2>
+    <p>如果本政策发生实质变化，我们会在 App 内以显著方式提示，并更新本文顶部的「更新日期」。</p>
+    <p>继续使用即表示你接受更新后的政策。</p>
+  </section>
+
+  <section id="s9">
+    <h2><span class="num">09</span>联系我们</h2>
+    <p>如对本政策有疑问，可通过 App Store 页面的「App 支持」链接联系开发者。</p>
+  </section>
+
+  <footer>
+    <div class="tagline">手表钢琴家 · 本地运行，无需账号，不上传数据</div>
+    <div>本页面不加载任何外部资源，无 Cookie、无追踪脚本。</div>
+    <div>© 2026 手表钢琴家</div>
+  </footer>
+</div>
+</body>
+</html>
