@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN" data-zcode-design>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171711">
+  <meta name="description" content="GLOO相机技术支持。获取常见问题解答、问题反馈入口和项目联系方式。">
+  <title>GLOO相机 | 技术支持</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #171711;
+      --surface: #201f18;
+      --ink: #f2eee4;
+      --muted: #b8b2a3;
+      --accent: #e4c36c;
+      --line: rgba(242, 238, 228, .14);
+      --content: 1120px;
+      --radius: 4px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 1.75; }
+    a { color: inherit; }
+    .shell { width: min(var(--content), calc(100% - 72px)); margin: 0 auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 36px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 700; letter-spacing: .02em; }
+    .brand-mark { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--accent); color: var(--accent); }
+    .brand-mark svg { width: 17px; height: 17px; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); }
+    .hero { padding: 92px 0 68px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 18px 0 16px; font-size: clamp(48px, 6vw, 78px); line-height: 1.05; letter-spacing: 0; }
+    .hero p { max-width: 680px; margin: 0; color: var(--muted); font-size: 20px; }
+    .hero-meta { margin-top: 28px; color: #8e897d; font-size: 13px; }
+    .content-grid { display: grid; grid-template-columns: 230px minmax(0, 740px); gap: 84px; padding: 64px 0 100px; }
+    .side-nav { align-self: start; position: sticky; top: 28px; border-left: 1px solid var(--line); padding-left: 18px; }
+    .side-nav a { display: block; padding: 5px 0; color: var(--muted); font-size: 13px; text-decoration: none; }
+    .side-nav a:hover { color: var(--accent); }
+    section { scroll-margin-top: 32px; padding-bottom: 34px; }
+    h2 { margin: 0 0 14px; font-size: 26px; line-height: 1.25; }
+    h3 { margin: 28px 0 7px; font-size: 18px; line-height: 1.35; }
+    p { margin: 0 0 14px; color: var(--muted); }
+    ul { margin: 0 0 16px; padding-left: 22px; color: var(--muted); }
+    li { padding: 3px 0; }
+    .rule { border: 0; border-top: 1px solid var(--line); margin: 0 0 34px; }
+    .support-panel { margin: 22px 0 30px; padding: 28px; border: 1px solid rgba(228, 195, 108, .36); background: var(--surface); border-radius: var(--radius); }
+    .support-panel h3 { margin-top: 0; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border: 1px solid var(--accent); border-radius: var(--radius); color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 650; }
+    .button:hover { background: var(--accent); color: #1b1a13; }
+    .button.primary { background: var(--accent); color: #1b1a13; }
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+    .contact-item { padding: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+    .contact-item small { display: block; color: #918c7f; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-item a { display: inline-block; margin-top: 5px; color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    footer { padding: 26px 0 42px; border-top: 1px solid var(--line); color: #8e897d; font-size: 12px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 24px; }
+    .footer-row a { color: var(--muted); text-decoration: none; }
+    @media (max-width: 760px) {
+      .shell { width: min(var(--content), calc(100% - 36px)); }
+      .nav { min-height: 68px; }
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 13px; }
+      .hero { padding: 64px 0 52px; }
+      .content-grid { display: block; padding-top: 38px; }
+      .side-nav { display: none; }
+      .contact { grid-template-columns: 1fr; }
+      .footer-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="support.html" aria-label="GLOO相机首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8.2h3l1.5-2h7l1.5 2h3v10H4v-10Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        <span>GLOO相机</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero shell">
+      <div class="eyebrow">GLOO CAMERA · SUPPORT</div>
+      <h1>技术支持</h1>
+      <p>遇到问题或有改进建议？通过项目支持入口联系我们。</p>
+      <div class="hero-meta">GLOO相机 · 帮助与反馈</div>
+    </div>
+
+    <div class="shell content-grid">
+      <aside class="side-nav" aria-label="页面目录">
+        <a href="#support-intro">获取帮助</a>
+        <a href="#troubleshooting">常见问题</a>
+        <a href="#contact">联系与项目</a>
+      </aside>
+
+      <article>
+        <section id="support-intro">
+          <h2>我们可以帮你解决什么</h2>
+          <p>遇到拍摄、滤镜、照片保存或胶片下载问题？请发送邮件至 <a href="mailto:1664660979@qq.com">1664660979@qq.com</a>。描述设备型号、系统版本、问题发生步骤，以及你预期看到的结果，有助于我们更快定位问题。</p>
+          <div class="support-panel">
+            <h3>提交问题或功能建议</h3>
+            <p>发送邮件报告错误、提出建议，并尽量附上设备型号、系统版本和复现步骤。</p>
+            <div class="button-row">
+              <a class="button primary" href="mailto:1664660979@qq.com">发送邮件</a>
+            </div>
+          </div>
+        </section>
+        <hr class="rule">
+
+        <section id="troubleshooting">
+          <h2>常见问题</h2>
+          <h3>相机无法启动</h3><p>请在系统“设置”中允许 GLOO相机访问相机。权限更改后重新打开应用。</p>
+          <h3>照片没有保存</h3><p>请确认已允许应用添加照片，并检查设备可用存储空间。应用只添加自己拍摄的照片，不读取图库中的其他内容。</p>
+          <h3>胶片或预览资源无法加载</h3><p>请检查网络连接后重试。已下载到设备的胶片可在离线时继续使用。</p>
+          <h3>如何提交有效的问题报告</h3>
+          <ul><li>写明 iPhone 型号与 iOS 版本</li><li>说明选择的相机、滤镜及拍摄方向</li><li>按步骤描述问题，并附上截图或录屏（注意移除私人信息）</li><li>说明问题是否每次都能复现</li></ul>
+        </section>
+        <hr class="rule">
+
+        <section id="contact">
+          <h2>联系与项目</h2>
+          <p>请通过邮件联系我们：<a href="mailto:1664660979@qq.com">1664660979@qq.com</a>。通过以下入口查看项目资料和隐私政策。</p>
+          <div class="contact">
+            <div class="contact-item"><small>技术支持 / 反馈</small><a href="mailto:1664660979@qq.com">1664660979@qq.com</a></div>
+            <div class="contact-item"><small>应用</small><span>GLOO相机 · 版本 1.0</span></div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer><div class="shell footer-row"><span>© 2026 GLOO相机</span><span>邮箱支持</span></div></footer>
+</body>
+</html>
